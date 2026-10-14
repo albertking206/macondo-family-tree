@@ -27,3 +27,11 @@ header .brand{display:flex;align-items:center;gap:0;flex-shrink:0}header .brand-
 /* Allow the full maker credit to wrap on narrow screens. */
 header .brand-meta .maker-credit{white-space:normal;overflow-wrap:anywhere;line-height:1.4}
 @media(max-width:600px){header .brand{min-width:0;flex-shrink:1}header .brand-meta{min-width:0}header .brand-meta .maker-credit{max-width:170px}}
+
+/* Brand glyphs: Simple Icons 13.0.0 (CC0). Keep the handle and icons together. */
+header .maker-tail{display:inline-flex;align-items:center;gap:6px;vertical-align:middle;white-space:nowrap}
+header .social-logos{display:inline-flex;align-items:center;gap:4px;flex-shrink:0;vertical-align:middle}
+header .social-logo{display:inline-flex;align-items:center;justify-content:center;width:16px;height:16px;flex:none}
+header .social-logo svg{display:block;width:100%;height:100%}
+header .social-xiaohongshu{width:25px}
+@media(max-width:600px){header .maker-tail{gap:5px}header .social-logos{gap:3px}header .social-logo{width:14px;height:14px}header .social-xiaohongshu{width:23px}}
