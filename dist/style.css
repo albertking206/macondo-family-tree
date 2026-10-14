@@ -23,3 +23,7 @@ header .brand{display:flex;align-items:center;gap:0;flex-shrink:0}header .brand-
 .pattern-people button small{display:block;font-size:10px;color:var(--muted);letter-spacing:1px}
 .pattern-people button>span>span{display:block;font-size:13px}
 .pattern-exception .pattern-people{flex-direction:row;flex-wrap:wrap}
+
+/* Allow the full maker credit to wrap on narrow screens. */
+header .brand-meta .maker-credit{white-space:normal;overflow-wrap:anywhere;line-height:1.4}
+@media(max-width:600px){header .brand{min-width:0;flex-shrink:1}header .brand-meta{min-width:0}header .brand-meta .maker-credit{max-width:170px}}
